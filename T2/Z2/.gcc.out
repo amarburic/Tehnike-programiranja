@@ -1,0 +1,8 @@
+/home/aburic1/workspace/TP/T2/Z2/main.cpp: In function ‘int DuzinaPerioda(std::vector<double>)’:
+/home/aburic1/workspace/TP/T2/Z2/main.cpp:11:47: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(j + k < v.size() && v.at(k) != v.at(j+k))
+                                               ^
+/home/aburic1/workspace/TP/T2/Z2/main.cpp: In function ‘int main()’:
+/home/aburic1/workspace/TP/T2/Z2/main.cpp:22:32: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+  while (cin >> input, input != 0)
+                                ^

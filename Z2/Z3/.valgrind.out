@@ -1,0 +1,21 @@
+==24697== Memcheck, a memory error detector
+==24697== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==24697== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==24697== Command: /home/aburic1/workspace/TP/Z2/Z3/.runme
+==24697== Parent PID: 24535
+==24697== 
+==24697== Conditional jump or move depends on uninitialised value(s)
+==24697==    at 0x401582: PascalovTrougao(int, int) (main.cpp:13)
+==24697==    by 0x4029B8: std::remove_reference<decltype (*(begin(*(begin(*(begin({parm#1})))))))>::type Izmijeni3DKontejner<std::vector<std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >, std::allocator<std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > > >(std::vector<std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >, std::allocator<std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > > >&, std::remove_reference<decltype (*(begin(*(begin(*(begin({parm#1})))))))>::type (*)(int, int), int, int) (main.cpp:40)
+==24697==    by 0x401AD6: main (main.cpp:67)
+==24697== 
+==24697== 
+==24697== HEAP SUMMARY:
+==24697==     in use at exit: 0 bytes in 0 blocks
+==24697==   total heap usage: 8 allocs, 8 frees, 274 bytes allocated
+==24697== 
+==24697== All heap blocks were freed -- no leaks are possible
+==24697== 
+==24697== For counts of detected and suppressed errors, rerun with: -v
+==24697== Use --track-origins=yes to see where uninitialised values come from
+==24697== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

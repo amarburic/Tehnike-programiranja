@@ -1,0 +1,77 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-431.29.2.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3413": {
+            "status": 1,
+            "run_result": {
+                "output": "Koeficijenti:\n          f2.a          f2.b          f3.a          f3.b\n       0.00000       0.00000       4.00000       0.00000\n       0.00000      -1.27324       0.00000      -1.27324\n       0.00000       0.63662       0.00000       0.63662\n       0.00000      -0.42441       0.00000      -0.42441\n       0.00000       0.31831       0.00000       0.31831\n       0.00000      -0.25465       0.00000      -0.25465\n       0.00000       0.21221       0.00000       0.21221\n       0.00000      -0.18189       0.00000      -0.18189\n       0.00000       0.15915       0.00000       0.15915\n       0.00000      -0.14147       0.00000      -0.14147\n       0.00000       0.12732       0.00000       0.12732\n\nPokusaj ispisa prva 3 koeficijenta iz f1:\n       4.00000       0.00000\n       1.00000       0.00000\nNeispravan indeks\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3414": {
+            "status": 6,
+            "run_result": {
+                "output": "Koeficijenti:\n             a             b\n      26.31895       0.00000\n       4.00000     -12.56637\n       1.00000      -6.28319\n       0.44444      -4.18879\n       0.25000      -3.14159\n       0.16000      -2.51327\n       0.11111      -2.09440\n       0.08163      -1.79520\n       0.06250      -1.57080\n       0.04938      -1.39626\n       0.04000      -1.25664\n\nStvarna i aproksimirana vrijednost polinoma se previse razlikuju\n\nDodjela f2=f1;\n\n         f1(3)         f2(3)\n       9.09567       9.09567\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3415": {
+            "status": 1,
+            "run_result": {
+                "output": "Koeficijenti:\n             a             b\n         26.32          0.00\n          4.00        -12.57\n          1.00         -6.28\n          0.44         -4.19\n          0.25         -3.14\n          0.16         -2.51\n          0.11         -2.09\n          0.08         -1.80\n          0.06         -1.57\n          0.05         -1.40\n          0.04         -1.26\nf3(2)=4.13\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3416": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak 1, OK\n     Stepen mora biti pozitivan\nIzuzetak 2, OK\n     Stepen mora biti pozitivan\nIzuzetak 3, OK\n     Stepen mora biti pozitivan\nIzuzetak 4, OK\n     Broj podintervala mora biti pozitivan\nIzuzetak 5, OK\n     Broj podintervala mora biti pozitivan\nIzuzetak 6, OK\n     Neispravan interval\nIzuzetak 7, OK\n     Neispravan indeks\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1464807932
+}

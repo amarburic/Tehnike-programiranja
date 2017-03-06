@@ -1,0 +1,20 @@
+Burek
+3
+Sirnica
+2.5
+Krompirusa
+2
+Cevapi
+5
+Cevapi u kajmaku
+6
+Begova corba
+3
+Jogurt
+1
+Coca Cola
+2.5
+Gusti sok
+2.5
+cizburger
+3

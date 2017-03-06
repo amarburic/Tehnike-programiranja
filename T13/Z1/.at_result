@@ -1,0 +1,77 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-504.1.3.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3294": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj likova: \n1. Unos kruga(Kr), pravougaonika(Pa,b), trougla(Ta,b,c):\n2. Unos kruga(Kr), pravougaonika(Pa,b), trougla(Ta,b,c):\n3. Unos kruga(Kr), pravougaonika(Pa,b), trougla(Ta,b,c):\nKrug radiusa 5 obima: 31.4159 povrsine: 78.5398.\nPravougaonik sa stranicama 3 i 2 obima: 10 povrsine: 6.\nTrougao sa stranicama 3, 4 i 5 obima: 12 povrsine: 6.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3295": {
+            "status": 1,
+            "run_result": {
+                "output": "Krug radiusa 2 obima: 12.5664 povrsine: 12.5664.\nPravougaonik sa stranicama 1 i 1 obima: 4 povrsine: 1.\nTrougao sa stranicama 4, 4 i 4 obima: 12 povrsine: 6.9282.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3296": {
+            "status": 1,
+            "run_result": {
+                "output": "31.4159\n78.5398\n11.8\n8.5\n7\n1.98431\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3298": {
+            "status": 1,
+            "run_result": {
+                "output": "Krug radiusa 4.5Pravougaonik sa stranicama 1.5 i 1.5Trougao sa stranicama 0.2, 0.3 i 0.4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1464098314
+}

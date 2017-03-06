@@ -1,0 +1,4 @@
+/rhome/a/aburic1/workspace/TP/T8/Z5/main.cpp: In function ‘int main()’:
+/rhome/a/aburic1/workspace/TP/T8/Z5/main.cpp:17:26: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     while(cin >> a, a != 0) {
+                          ^

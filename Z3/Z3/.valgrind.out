@@ -1,0 +1,22 @@
+==26811== Memcheck, a memory error detector
+==26811== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==26811== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==26811== Command: /rhome/a/aburic1/workspace/TP/Z3/Z3/.runme
+==26811== Parent PID: 26754
+==26811== 
+==26811== 
+==26811== HEAP SUMMARY:
+==26811==     in use at exit: 2,912 bytes in 65 blocks
+==26811==   total heap usage: 69 allocs, 4 frees, 3,072 bytes allocated
+==26811== 
+==26811== LEAK SUMMARY:
+==26811==    definitely lost: 0 bytes in 0 blocks
+==26811==    indirectly lost: 0 bytes in 0 blocks
+==26811==      possibly lost: 0 bytes in 0 blocks
+==26811==    still reachable: 2,912 bytes in 65 blocks
+==26811==         suppressed: 0 bytes in 0 blocks
+==26811== Reachable blocks (those to which a pointer was found) are not shown.
+==26811== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==26811== 
+==26811== For counts of detected and suppressed errors, rerun with: -v
+==26811== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

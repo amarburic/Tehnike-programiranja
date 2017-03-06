@@ -1,0 +1,7 @@
+/rhome/a/aburic1/workspace/TP/T7/Z4/main.cpp: In function ‘int main()’:
+/rhome/a/aburic1/workspace/TP/T7/Z4/main.cpp:26:48: error: invalid initialization of non-const reference of type ‘std::set<std::basic_string<char> >&’ from an rvalue of type ‘<brace-enclosed initializer list>’
+     for(auto s : Unija({"a", "b", "c", "d"}, s2))
+                                                ^
+/rhome/a/aburic1/workspace/TP/T7/Z4/main.cpp:17:8: error: in passing argument 1 of ‘std::set<T> Unija(std::set<T>&, const std::set<T>&) [with T = std::basic_string<char>]’
+ set<T> Unija (set<T> &s1, const set<T> &s2) {
+        ^

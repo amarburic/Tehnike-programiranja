@@ -1,0 +1,20 @@
+{
+    "buildhost_description": {
+        "id": "c9.etf.unsa.ba",
+        "os": "Linux 3.16.0-49-generic x86_64\nUbuntu 14.04.4 LTS\n",
+        "compiler_version": "g++ (Ubuntu 4.8.4-2ubuntu1~14.04.1) 4.8.4",
+        "debugger_version": "GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1",
+        "profiler_version": "valgrind-3.10.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": [],
+    "queue_items": 0,
+    "time": 1457543410
+}

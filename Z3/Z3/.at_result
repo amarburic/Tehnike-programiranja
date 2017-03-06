@@ -1,0 +1,88 @@
+{
+    "buildhost_description": {
+        "id": "c9.etf.unsa.ba",
+        "os": "Linux 3.16.0-49-generic x86_64\nUbuntu 14.04.4 LTS\n",
+        "compiler_version": "g++ (Ubuntu 4.8.4-2ubuntu1~14.04.1) 4.8.4",
+        "debugger_version": "GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1",
+        "profiler_version": "valgrind-3.10.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘std::stack<std::pair<std::basic_string<char>, std::basic_string<char> > > IzbaciKarte(std::list<std::set<Boje> >&, const std::pair<int, int>&)’:\nmain.cpp:32:18: warning: unused variable ‘it_s’ [-Wunused-variable]\n         for(auto it_s : it_l)\n                  ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "32",
+                "col": "18",
+                "message": "unused variable 'it_s'",
+                "output": "/tmp/buildservice/bs_5127/main.cpp:32:18: warning: unused variable ‘it_s’ [-Wunused-variable]         for(auto it_s : it_l)                  ^",
+                "code": "for(auto it_s : it_l)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2743": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite korak razbrajanja: Unesite broj karata koje zelite izbaciti: U spilu trenutno ima: 46 karata, i to: \nHerc: 2 3 4 5 6 7 8 10 J Q A\nKaro: 2 3 4 5 6 7 8 10 J K A\nPik:  2 3 4 5 6 7 8 9 10 Q K A\nTref: 2 3 4 5 6 7 8 9 J Q K A\nUnesite broj karata koje zelite vratiti u spil: Broj karata u steku: 4\nTrenutne karte u steku:\nTref 10\nPik J\nKaro Q\nHerc K\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2744": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite korak razbrajanja: Unesite broj karata koje zelite izbaciti: Izuzetak: Neispravni elementi za izbacivanje!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2745": {
+            "status": 1,
+            "run_result": {
+                "output": "OK",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2746": {
+            "status": 1,
+            "run_result": {
+                "output": "6",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 3,
+    "time": 1462297534
+}

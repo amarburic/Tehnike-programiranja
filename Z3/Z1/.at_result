@@ -1,0 +1,82 @@
+{
+    "buildhost_description": {
+        "id": "c9.etf.unsa.ba",
+        "os": "Linux 3.16.0-49-generic x86_64\nUbuntu 14.04.4 LTS\n",
+        "compiler_version": "g++ (Ubuntu 4.8.4-2ubuntu1~14.04.1) 4.8.4",
+        "debugger_version": "GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1",
+        "profiler_version": "valgrind-3.10.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp:8:45: warning: ‘ProslijediLijevo’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto ProslijediLijevo(function<T(T, T, T)> f) {\n                                             ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "8",
+                "col": "45",
+                "message": "'ProslijediLijevo' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                "output": "/tmp/buildservice/bs_8638/main.cpp:8:45: warning: ‘ProslijediLijevo’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto ProslijediLijevo(function<T(T, T, T)> f) {                                             ^",
+                "code": "auto ProslijediLijevo(function<T(T, T, T)> f) {"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2757": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite x y z: Unesite faktor skaliranja: Prosljedjivanje ulijevo: 2.24285\nProsljedjivanje udesno: -0.176712\nMonstrum: 22.4285\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2757.cpp:14:45: warning: ‘ProslijediLijevo’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto ProslijediLijevo(function<T(T, T, T)> f) {\n                                             ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2757.cpp",
+                        "line": "14",
+                        "col": "45",
+                        "message": "'ProslijediLijevo' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_8638/bs_test_2757.cpp:14:45: warning: ‘ProslijediLijevo’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto ProslijediLijevo(function<T(T, T, T)> f) {                                             ^",
+                        "code": "auto ProslijediLijevo(function<T(T, T, T)> f) {"
+                    }
+                ]
+            }
+        },
+        "2758": {
+            "status": 1,
+            "run_result": {
+                "output": "Tehnike programiranja",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2758.cpp:14:45: warning: ‘ProslijediLijevo’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto ProslijediLijevo(function<T(T, T, T)> f) {\n                                             ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2758.cpp",
+                        "line": "14",
+                        "col": "45",
+                        "message": "'ProslijediLijevo' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_8638/bs_test_2758.cpp:14:45: warning: ‘ProslijediLijevo’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto ProslijediLijevo(function<T(T, T, T)> f) {                                             ^",
+                        "code": "auto ProslijediLijevo(function<T(T, T, T)> f) {"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1462296445
+}

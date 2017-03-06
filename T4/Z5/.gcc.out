@@ -1,0 +1,9 @@
+/home/aburic1/workspace/TP/T4/Z5/main.cpp: In instantiation of ‘std::vector<UporedivTip> Presjek(std::vector<UporedivTip>&, std::vector<UporedivTip>&) [with UporedivTip = double]’:
+/home/aburic1/workspace/TP/T4/Z5/main.cpp:43:39:   required from ‘void UcitajSkupoveIIspisiPresjek(std::string) [with UporedivTip = double; std::string = std::basic_string<char>]’
+/home/aburic1/workspace/TP/T4/Z5/main.cpp:49:49:   required from here
+/home/aburic1/workspace/TP/T4/Z5/main.cpp:11:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+             if(i != j)
+                  ^
+/home/aburic1/workspace/TP/T4/Z5/main.cpp:15:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                 if(i == k) {
+                      ^

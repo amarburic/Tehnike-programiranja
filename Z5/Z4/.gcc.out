@@ -1,0 +1,10 @@
+/rhome/a/aburic1/workspace/TP/Z5/Z4/main.cpp: In constructor ‘FourierovRed::FourierovRed(double, std::initializer_list<double>, std::initializer_list<double>)’:
+/rhome/a/aburic1/workspace/TP/Z5/Z4/main.cpp:13:23: warning: ‘FourierovRed::b’ will be initialized after [-Wreorder]
+     vector<double> a, b;
+                       ^
+/rhome/a/aburic1/workspace/TP/Z5/Z4/main.cpp:12:12: warning:   ‘double FourierovRed::t’ [-Wreorder]
+     double t;
+            ^
+/rhome/a/aburic1/workspace/TP/Z5/Z4/main.cpp:31:1: warning:   when initialized here [-Wreorder]
+ FourierovRed::FourierovRed(double t, initializer_list<double> _a, initializer_list<double> _b)
+ ^

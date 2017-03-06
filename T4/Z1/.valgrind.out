@@ -1,0 +1,49 @@
+==26238== Memcheck, a memory error detector
+==26238== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==26238== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==26238== Command: /home/aburic1/workspace/TP/T4/Z1/.runme
+==26238== Parent PID: 26231
+==26238== 
+==26234== Conditional jump or move depends on uninitialised value(s)
+==26234==    at 0x401BB9: std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) (in /home/aburic1/workspace/TP/T4/Z1/.runme)
+==26234==    by 0x401A16: std::_Vector_base<std::string, std::allocator<std::string> >::_M_create_storage(unsigned long) (stl_vector.h:181)
+==26234==    by 0x401822: std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base(unsigned long, std::allocator<std::string> const&) (stl_vector.h:136)
+==26234==    by 0x40145D: std::vector<std::string, std::allocator<std::string> >::vector(unsigned long, std::allocator<std::string> const&) (stl_vector.h:270)
+==26234==    by 0x400F73: main (main.cpp:11)
+==26234== 
+==26234== Conditional jump or move depends on uninitialised value(s)
+==26234==    at 0x401D60: void std::__uninitialized_default_n_1<false>::__uninit_default_n<std::string*, unsigned long>(std::string*, unsigned long) (stl_uninitialized.h:494)
+==26234==    by 0x401C20: void std::__uninitialized_default_n<std::string*, unsigned long>(std::string*, unsigned long) (stl_uninitialized.h:543)
+==26234==    by 0x401AA4: void std::__uninitialized_default_n_a<std::string*, unsigned long, std::string>(std::string*, unsigned long, std::allocator<std::string>&) (stl_uninitialized.h:605)
+==26234==    by 0x4018CA: std::vector<std::string, std::allocator<std::string> >::_M_default_initialize(unsigned long) (stl_vector.h:1224)
+==26234==    by 0x401470: std::vector<std::string, std::allocator<std::string> >::vector(unsigned long, std::allocator<std::string> const&) (stl_vector.h:271)
+==26234==    by 0x400F73: main (main.cpp:11)
+==26234== 
+==26234== Conditional jump or move depends on uninitialised value(s)
+==26234==    at 0x400FEC: main (main.cpp:12)
+==26234== 
+==26234== Invalid read of size 8
+==26234==    at 0x4EF2458: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==26234==    by 0x401013: main (main.cpp:14)
+==26234==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==26234== 
+==26234== 
+==26234== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==26234==  Access not within mapped region at address 0x0
+==26234==    at 0x4EF2458: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==26234==    by 0x401013: main (main.cpp:14)
+==26234==  If you believe this happened as a result of a stack
+==26234==  overflow in your program's main thread (unlikely but
+==26234==  possible), you can try to increase the size of the
+==26234==  main thread stack using the --main-stacksize= flag.
+==26234==  The main thread stack size used in this run was 8388608.
+==26234== 
+==26234== HEAP SUMMARY:
+==26234==     in use at exit: 0 bytes in 0 blocks
+==26234==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==26234== 
+==26234== All heap blocks were freed -- no leaks are possible
+==26234== 
+==26234== For counts of detected and suppressed errors, rerun with: -v
+==26234== Use --track-origins=yes to see where uninitialised values come from
+==26234== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)

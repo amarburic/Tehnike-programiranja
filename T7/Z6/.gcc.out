@@ -1,0 +1,3 @@
+/home/aburic1/workspace/TP/T7/Z6/main.cpp:7:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default]
+ auto plus2(double x) {
+                    ^

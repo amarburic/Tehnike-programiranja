@@ -1,0 +1,4 @@
+/rhome/a/aburic1/workspace/TP/T10/Z2/main.cpp: In constructor ‘Ugao::Ugao(double)’:
+/rhome/a/aburic1/workspace/TP/T10/Z2/main.cpp:25:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;
+                                 ^

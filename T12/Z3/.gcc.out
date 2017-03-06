@@ -1,0 +1,8 @@
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /rhome/a/aburic1/workspace/TP/T12/Z3/main.cpp:3:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of ‘_FIter std::remove_if(_FIter, _FIter, _Predicate) [with _FIter = std::_Rb_tree_const_iterator<int>; _Predicate = operator*(const std::set<T>&, const std::set<T>&) [with T = int]::__lambda0]’:
+/rhome/a/aburic1/workspace/TP/T12/Z3/main.cpp:23:64:   required from ‘std::set<T> operator*(const std::set<T>&, const std::set<T>&) [with T = int]’
+/rhome/a/aburic1/workspace/TP/T12/Z3/main.cpp:40:21:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:1152:23: error: assignment of read-only location ‘__result.std::_Rb_tree_const_iterator<_Tp>::operator*<int>()’
+             *__result = _GLIBCXX_MOVE(*__first);
+                       ^

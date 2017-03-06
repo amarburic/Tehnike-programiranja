@@ -1,0 +1,49 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-504.1.3.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2727": {
+            "status": 1,
+            "run_result": {
+                "output": "Unos 3 koordinate vektora v1: \nv1={1,2,3}\nDuzina vektora v1: 3.74166\nUnos 3 koordinate vektora v2: \nv2={5,7,2}\nDuzina vektora v2: 8.83176\nv3=v1+v2 (poziv funkcije ZbirVektora)\nv3={6,9,5}\nUnos skalara s: \nv3*=s (poziv metode PomnoziSaSkalarom nad v3)\nv3={36,54,30}\nv3+=v1 (poziv metode SaberiSa nad v3)\nv3={37,56,33}\nv=v3 (poziv metode Ocitaj nad v3, pa metode Postavi nad v)\nv={37,56,33}\nv=v1 (koristite getere i setere)\nv={1,2,3}\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2728": {
+            "status": 1,
+            "run_result": {
+                "output": "Unos v1: Ispis v1 metodom Ispisi: {10,20,30}\nUnos v2: Ispis v2 pomocu getera: {1,2,3}\nv=v1+v2={11,22,33}\n(v*=5)*=2; pa je v={110,220,330}\n(v+=v1)+=v2; pa je v={121,242,363}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1461698524
+}

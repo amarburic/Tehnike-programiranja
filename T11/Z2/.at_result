@@ -1,0 +1,189 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-504.1.3.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In copy constructor ‘Liga::Liga(const Liga&)’:\nmain.cpp:48:9: warning: ‘Liga::br_timova’ will be initialized after [-Wreorder]\n     int br_timova;\n         ^\nmain.cpp:47:15: warning:   ‘const int Liga::max_br_timova’ [-Wreorder]\n     const int max_br_timova;\n               ^\nmain.cpp:84:1: warning:   when initialized here [-Wreorder]\n Liga::Liga(const Liga &l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova), timovi(new Tim*[l.max_br_timova]) {\n ^\nmain.cpp: In constructor ‘Liga::Liga(Liga&&)’:\nmain.cpp:48:9: warning: ‘Liga::br_timova’ will be initialized after [-Wreorder]\n     int br_timova;\n         ^\nmain.cpp:47:15: warning:   ‘const int Liga::max_br_timova’ [-Wreorder]\n     const int max_br_timova;\n               ^\nmain.cpp:112:1: warning:   when initialized here [-Wreorder]\n Liga::Liga(Liga &&l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova) {\n ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "48",
+                "col": "9",
+                "message": "'Liga::br_timova' will be initialized after",
+                "output": "/tmp/buildservice/bs_7665/main.cpp:48:9: warning: ‘Liga::br_timova’ will be initialized after [-Wreorder]     int br_timova;         ^",
+                "code": "int br_timova;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "47",
+                "col": "15",
+                "message": "'const int Liga::max_br_timova'",
+                "output": "/tmp/buildservice/bs_7665/main.cpp:47:15: warning:   ‘const int Liga::max_br_timova’ [-Wreorder]     const int max_br_timova;               ^",
+                "code": "const int max_br_timova;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "84",
+                "col": "1",
+                "message": "when initialized here",
+                "output": "/tmp/buildservice/bs_7665/main.cpp:84:1: warning:   when initialized here [-Wreorder] Liga::Liga(const Liga &l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova), timovi(new Tim*[l.max_br_timova]) { ^/tmp/buildservice/bs_7665/main.cpp: In constructor ‘Liga::Liga(Liga&&)’:",
+                "code": "Liga::Liga(const Liga &l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova), timovi(new Tim*[l.max_br_timova]) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "48",
+                "col": "9",
+                "message": "'Liga::br_timova' will be initialized after",
+                "output": "/tmp/buildservice/bs_7665/main.cpp:48:9: warning: ‘Liga::br_timova’ will be initialized after [-Wreorder]     int br_timova;         ^",
+                "code": "int br_timova;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "47",
+                "col": "15",
+                "message": "'const int Liga::max_br_timova'",
+                "output": "/tmp/buildservice/bs_7665/main.cpp:47:15: warning:   ‘const int Liga::max_br_timova’ [-Wreorder]     const int max_br_timova;               ^",
+                "code": "const int max_br_timova;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "112",
+                "col": "1",
+                "message": "when initialized here",
+                "output": "/tmp/buildservice/bs_7665/main.cpp:112:1: warning:   when initialized here [-Wreorder] Liga::Liga(Liga &&l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova) { ^",
+                "code": "Liga::Liga(Liga &&l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova) {"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3066": {
+            "status": 1,
+            "run_result": {
+                "output": "FK Sarajevo            4   1   3   0   5   4   6\nNK Celik               4   2   0   2   7   8   6\nFK Zeljeznicar         4   1   2   1   8   6   5\nFK Olimpic             4   1   2   1   5   4   5\nFK Mladost             4   1   2   1   5   5   5\nFK Sloboda             4   1   1   2   5   8   4\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3067": {
+            "status": 1,
+            "run_result": {
+                "output": "IZUZETAK",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3068": {
+            "status": 1,
+            "run_result": {
+                "output": "FK Zeljeznicar         4   2   2   0  10   7   8\nFK Sarajevo            4   2   1   1   6   5   7\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3069": {
+            "status": 1,
+            "run_result": {
+                "output": "FK Zeljeznicar         4   2   2   0  10   7   8\nFK Sarajevo            4   2   1   1   6   5   7\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n\nFK Zeljeznicar         4   2   2   0  10   7   8\nFK Sarajevo            4   2   1   1   6   5   7\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3070": {
+            "status": 1,
+            "run_result": {
+                "output": "FK Zeljeznicar         4   2   2   0  10   7   8\nFK Sarajevo            4   2   1   1   6   5   7\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3071": {
+            "status": 1,
+            "run_result": {
+                "output": "Tabela 1\nFK Zeljeznicar         4   2   2   0  10   7   8\nFK Sarajevo            4   2   1   1   6   5   7\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n\nTabela 2\nFK Sarajevo            4   1   3   0   5   4   6\nNK Celik               4   2   0   2   7   8   6\nFK Zeljeznicar         4   1   2   1   8   6   5\nFK Olimpic             4   1   2   1   5   4   5\nFK Mladost             4   1   2   1   5   5   5\nFK Sloboda             4   1   1   2   5   8   4\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3072": {
+            "status": 1,
+            "run_result": {
+                "output": "Tabela 1\nFK Zeljeznicar         4   2   2   0  10   7   8\nFK Sarajevo            4   2   1   1   6   5   7\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n\nTabela 2\nFK Sarajevo            4   1   3   0   5   4   6\nNK Celik               4   2   0   2   7   8   6\nFK Zeljeznicar         4   1   2   1   8   6   5\nFK Olimpic             4   1   2   1   5   4   5\nFK Mladost             4   1   2   1   5   5   5\nFK Sloboda             4   1   1   2   5   8   4\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3073": {
+            "status": 1,
+            "run_result": {
+                "output": "Tabela 1\nFK Zeljeznicar         5   2   3   0  12   9   9\nFK Sarajevo            5   2   2   1   8   7   8\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n\nTabela 2\nFK Zeljeznicar         5   2   3   0  12   9   9\nFK Sarajevo            5   2   2   1   8   7   8\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n\nTabela 3\nFK Zeljeznicar         5   2   3   0  12   9   9\nFK Sarajevo            5   2   2   1   8   7   8\nFK Olimpic             4   2   0   2   5   5   6\nNK Celik               4   2   0   2   7   8   6\nFK Mladost             4   1   1   2   4   5   4\nFK Sloboda             4   0   2   2   8  10   2\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1462892232
+}

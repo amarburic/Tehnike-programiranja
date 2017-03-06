@@ -1,0 +1,102 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-504.1.3.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In constructor ‘Ugao::Ugao(double)’:\nmain.cpp:25:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n         else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;\n                                 ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "25",
+                "col": "33",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_3293/main.cpp:25:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]         else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;                                 ^",
+                "code": "else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2872": {
+            "status": 6,
+            "run_result": {
+                "output": "0deg 0min 0sec\n90deg 1min 0sec\n315deg 5min 0sec\n0deg 6min 0sec\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2873": {
+            "status": 6,
+            "run_result": {
+                "output": "90deg 0min 0sec\n315deg 0min 0sec\nOK\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2874": {
+            "status": 6,
+            "run_result": {
+                "output": "OK\n4.90554",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2875": {
+            "status": 6,
+            "run_result": {
+                "output": "180deg 3min 0sec\n180deg 3min 0sec\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2876": {
+            "status": 6,
+            "run_result": {
+                "output": "180deg 3min 0sec\n270deg 4min 0sec\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1462631181
+}

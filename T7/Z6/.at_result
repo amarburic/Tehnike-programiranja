@@ -1,0 +1,143 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-504.1.3.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp:7:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus2(double x) {\n                    ^\nmain.cpp:11:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus3(double x) {\n                    ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "7",
+                "col": "20",
+                "message": "'plus2' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                "output": "/tmp/buildservice/bs_7997/main.cpp:7:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus2(double x) {                    ^",
+                "code": "auto plus2(double x) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "11",
+                "col": "20",
+                "message": "'plus3' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                "output": "/tmp/buildservice/bs_7997/main.cpp:11:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus3(double x) {                    ^",
+                "code": "auto plus3(double x) {"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2582": {
+            "status": 1,
+            "run_result": {
+                "output": "15\n16\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2582.cpp:13:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus2(double x) {\n                    ^\nbs_test_2582.cpp:17:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus3(double x) {\n                    ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2582.cpp",
+                        "line": "13",
+                        "col": "20",
+                        "message": "'plus2' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_7997/bs_test_2582.cpp:13:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus2(double x) {                    ^",
+                        "code": "auto plus2(double x) {"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2582.cpp",
+                        "line": "17",
+                        "col": "20",
+                        "message": "'plus3' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_7997/bs_test_2582.cpp:17:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus3(double x) {                    ^",
+                        "code": "auto plus3(double x) {"
+                    }
+                ]
+            }
+        },
+        "2583": {
+            "status": 1,
+            "run_result": {
+                "output": "15\n16\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2583.cpp:13:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus2(double x) {\n                    ^\nbs_test_2583.cpp:17:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus3(double x) {\n                    ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2583.cpp",
+                        "line": "13",
+                        "col": "20",
+                        "message": "'plus2' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_7997/bs_test_2583.cpp:13:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus2(double x) {                    ^",
+                        "code": "auto plus2(double x) {"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2583.cpp",
+                        "line": "17",
+                        "col": "20",
+                        "message": "'plus3' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_7997/bs_test_2583.cpp:17:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus3(double x) {                    ^",
+                        "code": "auto plus3(double x) {"
+                    }
+                ]
+            }
+        },
+        "2584": {
+            "status": 1,
+            "run_result": {
+                "output": "4\n3\n3\n3\n9\n6\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2584.cpp:13:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus2(double x) {\n                    ^\nbs_test_2584.cpp:17:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default]\n auto plus3(double x) {\n                    ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2584.cpp",
+                        "line": "13",
+                        "col": "20",
+                        "message": "'plus2' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_7997/bs_test_2584.cpp:13:20: warning: ‘plus2’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus2(double x) {                    ^",
+                        "code": "auto plus2(double x) {"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2584.cpp",
+                        "line": "17",
+                        "col": "20",
+                        "message": "'plus3' function uses 'auto' type specifier without trailing return type [enabled by default]",
+                        "output": "/tmp/buildservice/bs_7997/bs_test_2584.cpp:17:20: warning: ‘plus3’ function uses ‘auto’ type specifier without trailing return type [enabled by default] auto plus3(double x) {                    ^",
+                        "code": "auto plus3(double x) {"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1461361733
+}

@@ -1,0 +1,96 @@
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In constructor ‘Ugao::Ugao(double)’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:25:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;
+                                 ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In constructor ‘Ugao::Ugao(int, int, int)’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:31:15: error: ‘class Ugao’ has no member named ‘stepeni’
+         this->stepeni = stepeni;
+               ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:32:15: error: ‘class Ugao’ has no member named ‘minute’
+         this->minute = minute;
+               ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:33:15: error: ‘class Ugao’ has no member named ‘sekunde’
+         this->sekunde = sekunde;
+               ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘double Ugao::DajRadijane() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:41:57: error: ‘stepeni’ was not declared in this scope
+     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };
+                                                         ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:41:66: error: ‘minute’ was not declared in this scope
+     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };
+                                                                  ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:41:74: error: ‘sekunde’ was not declared in this scope
+     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };
+                                                                          ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘int Ugao::DajStepene() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:47:38: error: ‘stepeni’ was not declared in this scope
+     int DajStepene()  const { return stepeni; }; 
+                                      ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘int Ugao::DajMinute() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:48:37: error: ‘minute’ was not declared in this scope
+     int DajMinute()  const { return minute; }; 
+                                     ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘int Ugao::DajSekunde() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:49:38: error: ‘sekunde’ was not declared in this scope
+     int DajSekunde()  const { return sekunde; }; 
+                                      ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘void Ugao::Ispisi() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:50:51: error: ‘stepeni’ was not declared in this scope
+     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };
+                                                   ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:50:60: error: ‘minute’ was not declared in this scope
+     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };
+                                                            ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:50:68: error: ‘sekunde’ was not declared in this scope
+     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };
+                                                                    ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘Ugao& Ugao::SaberiSa(const Ugao&)’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:52:77: error: ‘stepeni’ was not declared in this scope
+     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); }; 
+                                                                             ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:52:86: error: ‘minute’ was not declared in this scope
+     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); }; 
+                                                                                      ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:52:94: error: ‘sekunde’ was not declared in this scope
+     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); }; 
+                                                                                              ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘Ugao& Ugao::PomnoziSa(double)’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:53:71: error: ‘stepeni’ was not declared in this scope
+     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); }; 
+                                                                       ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:53:80: error: ‘minute’ was not declared in this scope
+     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); }; 
+                                                                                ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:53:88: error: ‘sekunde’ was not declared in this scope
+     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); }; 
+                                                                                        ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:53:100: error: invalid type argument of unary ‘*’ (have ‘double’)
+     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); }; 
+                                                                                                    ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:53:101: error: expected ‘;’ before ‘)’ token
+     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); }; 
+                                                                                                     ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘double Ugao::DajRadijane() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:41:84: warning: control reaches end of non-void function [-Wreturn-type]
+     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };
+                                                                                    ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘int Ugao::DajSekunde() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:49:47: warning: control reaches end of non-void function [-Wreturn-type]
+     int DajSekunde()  const { return sekunde; }; 
+                                               ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘int Ugao::DajMinute() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:48:45: warning: control reaches end of non-void function [-Wreturn-type]
+     int DajMinute()  const { return minute; }; 
+                                             ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘int Ugao::DajStepene() const’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:47:47: warning: control reaches end of non-void function [-Wreturn-type]
+     int DajStepene()  const { return stepeni; }; 
+                                               ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘Ugao& Ugao::SaberiSa(const Ugao&)’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:52:123: warning: control reaches end of non-void function [-Wreturn-type]
+     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); }; 
+                                                                                                                           ^
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp: In member function ‘Ugao& Ugao::PomnoziSa(double)’:
+/rhome/a/aburic1/workspace/TP/T10/Z1/main.cpp:53:104: warning: control reaches end of non-void function [-Wreturn-type]
+     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); }; 
+                                                                                                        ^

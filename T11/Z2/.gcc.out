@@ -1,0 +1,20 @@
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp: In copy constructor ‘Liga::Liga(const Liga&)’:
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp:48:9: warning: ‘Liga::br_timova’ will be initialized after [-Wreorder]
+     int br_timova;
+         ^
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp:47:15: warning:   ‘const int Liga::max_br_timova’ [-Wreorder]
+     const int max_br_timova;
+               ^
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp:84:1: warning:   when initialized here [-Wreorder]
+ Liga::Liga(const Liga &l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova), timovi(new Tim*[l.max_br_timova]) { 
+ ^
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp: In constructor ‘Liga::Liga(Liga&&)’:
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp:48:9: warning: ‘Liga::br_timova’ will be initialized after [-Wreorder]
+     int br_timova;
+         ^
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp:47:15: warning:   ‘const int Liga::max_br_timova’ [-Wreorder]
+     const int max_br_timova;
+               ^
+/rhome/a/aburic1/workspace/TP/T11/Z2/main.cpp:112:1: warning:   when initialized here [-Wreorder]
+ Liga::Liga(Liga &&l) : br_timova(l.br_timova), max_br_timova(l.max_br_timova) { 
+ ^

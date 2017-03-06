@@ -1,0 +1,40 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-431.29.2.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp:121:33: warning: multi-character character constant [-Wmultichar]\n         if(!citac.ignore(10000, '/n'))\n                                 ^\nmain.cpp: In function ‘int main()’:\nmain.cpp:125:31: warning: unused variable ‘tezina_putnika’ [-Wunused-variable]\n             int broj_putnika, tezina_putnika;\n                               ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "121",
+                "col": "33",
+                "message": "multi-character character constant",
+                "output": "/tmp/buildservice/bs_9514/main.cpp:121:33: warning: multi-character character constant [-Wmultichar]         if(!citac.ignore(10000, '/n'))                                 ^",
+                "code": "if(!citac.ignore(10000, '/n'))"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "125",
+                "col": "31",
+                "message": "unused variable 'tezina_putnika'",
+                "output": "/tmp/buildservice/bs_9514/main.cpp:125:31: warning: unused variable ‘tezina_putnika’ [-Wunused-variable]             int broj_putnika, tezina_putnika;                               ^",
+                "code": "int broj_putnika, tezina_putnika;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": [],
+    "queue_items": 0,
+    "time": 1465818505
+}

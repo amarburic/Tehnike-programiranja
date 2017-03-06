@@ -1,0 +1,4 @@
+/rhome/a/aburic1/workspace/TP/Z3/Z3/main.cpp: In function ‘std::stack<std::pair<std::basic_string<char>, std::basic_string<char> > > IzbaciKarte(std::list<std::set<Boje> >&, const std::pair<int, int>&)’:
+/rhome/a/aburic1/workspace/TP/Z3/Z3/main.cpp:32:18: warning: unused variable ‘it_s’ [-Wunused-variable]
+         for(auto it_s : it_l)
+                  ^

@@ -1,0 +1,282 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-504.1.3.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 4.8.2",
+        "debugger_version": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-83.el6)",
+        "profiler_version": "valgrind-3.8.1"
+    },
+    "status": 3,
+    "compile_result": {
+        "status": 2,
+        "output": "main.cpp: In constructor ‘Ugao::Ugao(double)’:\nmain.cpp:25:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n         else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;\n                                 ^\nmain.cpp: In constructor ‘Ugao::Ugao(int, int, int)’:\nmain.cpp:29:17: error: invalid operands of types ‘int’ and ‘const double’ to binary ‘operator%’\n         stepeni %= KRUG;\n                 ^\nmain.cpp:29:17: error:   in evaluation of ‘operator%=(int, const double)’\nmain.cpp:31:15: error: ‘class Ugao’ has no member named ‘stepeni’\n         this->stepeni = stepeni;\n               ^\nmain.cpp:32:15: error: ‘class Ugao’ has no member named ‘minute’\n         this->minute = minute;\n               ^\nmain.cpp:33:15: error: ‘class Ugao’ has no member named ‘sekunde’\n         this->sekunde = sekunde;\n               ^\nmain.cpp: In member function ‘double Ugao::DajRadijane() const’:\nmain.cpp:41:57: error: ‘stepeni’ was not declared in this scope\n     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };\n                                                         ^\nmain.cpp:41:66: error: ‘minute’ was not declared in this scope\n     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };\n                                                                  ^\nmain.cpp:41:74: error: ‘sekunde’ was not declared in this scope\n     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };\n                                                                          ^\nmain.cpp: In member function ‘int Ugao::DajStepene() const’:\nmain.cpp:47:38: error: ‘stepeni’ was not declared in this scope\n     int DajStepene()  const { return stepeni; };\n                                      ^\nmain.cpp: In member function ‘int Ugao::DajMinute() const’:\nmain.cpp:48:37: error: ‘minute’ was not declared in this scope\n     int DajMinute()  const { return minute; };\n                                     ^\nmain.cpp: In member function ‘int Ugao::DajSekunde() const’:\nmain.cpp:49:38: error: ‘sekunde’ was not declared in this scope\n     int DajSekunde()  const { return sekunde; };\n                                      ^\nmain.cpp: In member function ‘void Ugao::Ispisi() const’:\nmain.cpp:50:51: error: ‘stepeni’ was not declared in this scope\n     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };\n                                                   ^\nmain.cpp:50:60: error: ‘minute’ was not declared in this scope\n     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };\n                                                            ^\nmain.cpp:50:68: error: ‘sekunde’ was not declared in this scope\n     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };\n                                                                    ^\nmain.cpp: In member function ‘Ugao& Ugao::SaberiSa(const Ugao&)’:\nmain.cpp:52:77: error: ‘stepeni’ was not declared in this scope\n     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };\n                                                                             ^\nmain.cpp:52:86: error: ‘minute’ was not declared in this scope\n     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };\n                                                                                      ^\nmain.cpp:52:94: error: ‘sekunde’ was not declared in this scope\n     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };\n                                                                                              ^\nmain.cpp: In member function ‘Ugao& Ugao::PomnoziSa(double)’:\nmain.cpp:53:71: error: ‘stepeni’ was not declared in this scope\n     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };\n                                                                       ^\nmain.cpp:53:80: error: ‘minute’ was not declared in this scope\n     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };\n                                                                                ^\nmain.cpp:53:88: error: ‘sekunde’ was not declared in this scope\n     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };\n                                                                                        ^\nmain.cpp:53:100: error: invalid type argument of unary ‘*’ (have ‘double’)\n     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };\n                                                                                                    ^\nmain.cpp:53:101: error: expected ‘;’ before ‘)’ token\n     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };\n                                                                                                     ^\nmain.cpp: In member function ‘double Ugao::DajRadijane() const’:\nmain.cpp:41:84: warning: control reaches end of non-void function [-Wreturn-type]\n     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };\n                                                                                    ^\nmain.cpp: In member function ‘int Ugao::DajSekunde() const’:\nmain.cpp:49:47: warning: control reaches end of non-void function [-Wreturn-type]\n     int DajSekunde()  const { return sekunde; };\n                                               ^\nmain.cpp: In member function ‘int Ugao::DajMinute() const’:\nmain.cpp:48:45: warning: control reaches end of non-void function [-Wreturn-type]\n     int DajMinute()  const { return minute; };\n                                             ^\nmain.cpp: In member function ‘int Ugao::DajStepene() const’:\nmain.cpp:47:47: warning: control reaches end of non-void function [-Wreturn-type]\n     int DajStepene()  const { return stepeni; };\n                                               ^\nmain.cpp: In member function ‘Ugao& Ugao::SaberiSa(const Ugao&)’:\nmain.cpp:52:123: warning: control reaches end of non-void function [-Wreturn-type]\n     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };\n                                                                                                                           ^\nmain.cpp: In member function ‘Ugao& Ugao::PomnoziSa(double)’:\nmain.cpp:53:104: warning: control reaches end of non-void function [-Wreturn-type]\n     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };\n                                                                                                        ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "25",
+                "col": "33",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:25:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]         else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;                                 ^/tmp/buildservice/bs_5347/main.cpp: In constructor ‘Ugao::Ugao(int, int, int)’:",
+                "code": "else if(radijani != 2 * PI) radijani -= int(radijani / (2 * PI)) * 2 * PI;"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "29",
+                "col": "17",
+                "message": "invalid operands of types 'int' and 'const double' to binary 'operator%'",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:29:17: error: invalid operands of types ‘int’ and ‘const double’ to binary ‘operator%’         stepeni %= KRUG;                 ^",
+                "code": "stepeni %= KRUG;"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "29",
+                "col": "17",
+                "message": "in evaluation of 'operator%=(int, const double)'",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:29:17: error:   in evaluation of ‘operator%=(int, const double)’"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "31",
+                "col": "15",
+                "message": "'class Ugao' has no member named 'stepeni'",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:31:15: error: ‘class Ugao’ has no member named ‘stepeni’         this->stepeni = stepeni;               ^",
+                "code": "this->stepeni = stepeni;"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "32",
+                "col": "15",
+                "message": "'class Ugao' has no member named 'minute'",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:32:15: error: ‘class Ugao’ has no member named ‘minute’         this->minute = minute;               ^",
+                "code": "this->minute = minute;"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "33",
+                "col": "15",
+                "message": "'class Ugao' has no member named 'sekunde'",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:33:15: error: ‘class Ugao’ has no member named ‘sekunde’         this->sekunde = sekunde;               ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘double Ugao::DajRadijane() const’:",
+                "code": "this->sekunde = sekunde;"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "41",
+                "col": "57",
+                "message": "'stepeni' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:41:57: error: ‘stepeni’ was not declared in this scope     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };                                                         ^",
+                "code": "double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "41",
+                "col": "66",
+                "message": "'minute' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:41:66: error: ‘minute’ was not declared in this scope     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };                                                                  ^",
+                "code": "double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "41",
+                "col": "74",
+                "message": "'sekunde' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:41:74: error: ‘sekunde’ was not declared in this scope     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };                                                                          ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘int Ugao::DajStepene() const’:",
+                "code": "double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "47",
+                "col": "38",
+                "message": "'stepeni' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:47:38: error: ‘stepeni’ was not declared in this scope     int DajStepene()  const { return stepeni; };                                      ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘int Ugao::DajMinute() const’:",
+                "code": "int DajStepene()  const { return stepeni; };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "48",
+                "col": "37",
+                "message": "'minute' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:48:37: error: ‘minute’ was not declared in this scope     int DajMinute()  const { return minute; };                                     ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘int Ugao::DajSekunde() const’:",
+                "code": "int DajMinute()  const { return minute; };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "49",
+                "col": "38",
+                "message": "'sekunde' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:49:38: error: ‘sekunde’ was not declared in this scope     int DajSekunde()  const { return sekunde; };                                      ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘void Ugao::Ispisi() const’:",
+                "code": "int DajSekunde()  const { return sekunde; };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "50",
+                "col": "51",
+                "message": "'stepeni' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:50:51: error: ‘stepeni’ was not declared in this scope     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };                                                   ^",
+                "code": "void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "50",
+                "col": "60",
+                "message": "'minute' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:50:60: error: ‘minute’ was not declared in this scope     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };                                                            ^",
+                "code": "void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "50",
+                "col": "68",
+                "message": "'sekunde' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:50:68: error: ‘sekunde’ was not declared in this scope     void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };                                                                    ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘Ugao& Ugao::SaberiSa(const Ugao&)’:",
+                "code": "void Ispisi()  const { cout << StepenURadijan(stepeni, minute, sekunde) << endl; };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "52",
+                "col": "77",
+                "message": "'stepeni' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:52:77: error: ‘stepeni’ was not declared in this scope     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };                                                                             ^",
+                "code": "Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "52",
+                "col": "86",
+                "message": "'minute' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:52:86: error: ‘minute’ was not declared in this scope     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };                                                                                      ^",
+                "code": "Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "52",
+                "col": "94",
+                "message": "'sekunde' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:52:94: error: ‘sekunde’ was not declared in this scope     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };                                                                                              ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘Ugao& Ugao::PomnoziSa(double)’:",
+                "code": "Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "53",
+                "col": "71",
+                "message": "'stepeni' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:53:71: error: ‘stepeni’ was not declared in this scope     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };                                                                       ^",
+                "code": "Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "53",
+                "col": "80",
+                "message": "'minute' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:53:80: error: ‘minute’ was not declared in this scope     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };                                                                                ^",
+                "code": "Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "53",
+                "col": "88",
+                "message": "'sekunde' was not declared in this scope",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:53:88: error: ‘sekunde’ was not declared in this scope     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };                                                                                        ^",
+                "code": "Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "53",
+                "col": "100",
+                "message": "invalid type argument of unary '*' (have 'double')",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:53:100: error: invalid type argument of unary ‘*’ (have ‘double’)     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };                                                                                                    ^",
+                "code": "Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };"
+            },
+            {
+                "type": "error",
+                "file": "main.cpp",
+                "line": "53",
+                "col": "101",
+                "message": "expected ';' before ')' token",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:53:101: error: expected ‘;’ before ‘)’ token     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };                                                                                                     ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘double Ugao::DajRadijane() const’:",
+                "code": "Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "41",
+                "col": "84",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:41:84: warning: control reaches end of non-void function [-Wreturn-type]     double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };                                                                                    ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘int Ugao::DajSekunde() const’:",
+                "code": "double DajRadijane()  const { return StepenURadijan(stepeni, minute, sekunde); };"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "49",
+                "col": "47",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:49:47: warning: control reaches end of non-void function [-Wreturn-type]     int DajSekunde()  const { return sekunde; };                                               ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘int Ugao::DajMinute() const’:",
+                "code": "int DajSekunde()  const { return sekunde; };"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "48",
+                "col": "45",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:48:45: warning: control reaches end of non-void function [-Wreturn-type]     int DajMinute()  const { return minute; };                                             ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘int Ugao::DajStepene() const’:",
+                "code": "int DajMinute()  const { return minute; };"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "47",
+                "col": "47",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:47:47: warning: control reaches end of non-void function [-Wreturn-type]     int DajStepene()  const { return stepeni; };                                               ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘Ugao& Ugao::SaberiSa(const Ugao&)’:",
+                "code": "int DajStepene()  const { return stepeni; };"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "52",
+                "col": "123",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:52:123: warning: control reaches end of non-void function [-Wreturn-type]     Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };                                                                                                                           ^/tmp/buildservice/bs_5347/main.cpp: In member function ‘Ugao& Ugao::PomnoziSa(double)’:",
+                "code": "Ugao  & SaberiSa( const Ugao  & u) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde) + u.DajRadijane()); };"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "53",
+                "col": "104",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_5347/main.cpp:53:104: warning: control reaches end of non-void function [-Wreturn-type]     Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };                                                                                                        ^",
+                "code": "Ugao  & PomnoziSa( double x) { return *this = Ugao(StepenURadijan(stepeni, minute, sekunde); * x); };"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": [],
+    "queue_items": 0,
+    "time": 1462630970
+}
